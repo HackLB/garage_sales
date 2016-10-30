@@ -72,13 +72,11 @@ def save_records(records):
 
             if record['dates'][0] not in existing_data['dates']:
                 existing_data['dates'].extend(record['dates'])
-            save_data = existing_data
-
-        else:
-            save_data = record
-            
-        with open(path, 'w') as f:
-            json.dump(save_data, f, indent=4, ensure_ascii=False, sort_keys=True)
+                with open(path, 'w') as f:
+                    json.dump(existing_data, f, indent=4, ensure_ascii=False, sort_keys=True)
+        else: 
+            with open(path, 'w') as f:
+                json.dump(record, f, indent=4, ensure_ascii=False, sort_keys=True)
 
 
 
