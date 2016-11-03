@@ -5,10 +5,11 @@ from bs4 import BeautifulSoup
 from pprint import pprint
 import simplejson as json
 import hashlib
+from geopy.geocoders import Nominatim
+from geopy.exc import GeocoderTimedOut
 
-
+geolocator = Nominatim()
 url = 'https://wwwbitprod1.longbeach.gov/GarageSalePermit/SearchByDate.aspx'
-
 
 def getmd5(message):    
     """
@@ -49,6 +50,20 @@ def get_subdirectory(base_name):
     return sub_dir
 
 
+def geocode(address_stub):
+    address = '{}, LONG BEACH, CA'.format(address_stub)
+
+    try:
+        location = geolocator.geocode(address, timeout=2)
+        if location:
+            return {"latitude": location.latitude, "longitude": location.longitude}
+        else:
+            return None
+    except GeocoderTimedOut:
+        return geocode(address)
+
+    
+
 def save_records(records):
     """
     Saves records to invidual JSON files.
@@ -74,7 +89,11 @@ def save_records(records):
                 existing_data['dates'].extend(record['dates'])
                 with open(path, 'w') as f:
                     json.dump(existing_data, f, indent=4, ensure_ascii=False, sort_keys=True)
-        else: 
+        else:
+            geocoded_location = geocode(record['location'])
+            if geocoded_location:
+                record['coordinates'] = geocoded_location
+
             with open(path, 'w') as f:
                 json.dump(record, f, indent=4, ensure_ascii=False, sort_keys=True)
 
