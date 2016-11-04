@@ -56,7 +56,7 @@ def geocode(address_stub):
     try:
         location = geolocator.geocode(address, timeout=2)
         if location:
-            return {"latitude": location.latitude, "longitude": location.longitude}
+            return {"latitude": location.latitude, "longitude": location.longitude, "address": location.address}
         else:
             return None
     except GeocoderTimedOut:
