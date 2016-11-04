@@ -2,5 +2,10 @@
     "dates": [
         "11/5/2016 - 11/5/2016"
     ],
+    "geo": {
+        "address": "3703 Senasac Ave, Long Beach, CA 90808, USA",
+        "latitude": 33.825173,
+        "longitude": -118.114092
+    },
     "location": "3703 SENASAC AVE"
 }

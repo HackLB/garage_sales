@@ -2,5 +2,10 @@
     "dates": [
         "10/29/2016 - 10/30/2016"
     ],
+    "geo": {
+        "address": "6320 Long Beach Blvd, Long Beach, CA 90805, USA",
+        "latitude": 33.8693766,
+        "longitude": -118.2009601
+    },
     "location": "6320 LONG BEACH BLVD"
 }

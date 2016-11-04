@@ -2,5 +2,10 @@
     "dates": [
         "11/5/2016 - 11/6/2016"
     ],
+    "geo": {
+        "address": "5314 E 4th St, Long Beach, CA 90814, USA",
+        "latitude": 33.771423,
+        "longitude": -118.129204
+    },
     "location": "5314 E 4TH ST"
 }

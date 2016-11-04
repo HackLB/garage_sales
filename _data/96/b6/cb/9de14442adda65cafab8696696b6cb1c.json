@@ -7,5 +7,10 @@
     "dates": [
         "11/5/2016 - 11/5/2016"
     ],
+    "geo": {
+        "address": "4242 E Vermont St, Long Beach, CA 90814, USA",
+        "latitude": 33.7707119,
+        "longitude": -118.142687
+    },
     "location": "4242 VERMONT ST"
 }

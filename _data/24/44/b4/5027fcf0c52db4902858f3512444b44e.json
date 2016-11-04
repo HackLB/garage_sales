@@ -2,5 +2,10 @@
     "dates": [
         "10/29/2016 - 10/30/2016"
     ],
+    "geo": {
+        "address": "632 E Carson St, Long Beach, CA 90807, USA",
+        "latitude": 33.8314338,
+        "longitude": -118.1840881
+    },
     "location": "632 E CARSON ST"
 }

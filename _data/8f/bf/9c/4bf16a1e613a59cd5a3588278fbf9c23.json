@@ -2,5 +2,10 @@
     "dates": [
         "10/31/2016 - 11/2/2016"
     ],
+    "geo": {
+        "address": "2241 Linden Ave, Long Beach, CA 90806, USA",
+        "latitude": 33.7979262,
+        "longitude": -118.1863546
+    },
     "location": "2241 LINDEN AVE"
 }

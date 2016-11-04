@@ -2,5 +2,10 @@
     "dates": [
         "10/29/2016 - 10/30/2016"
     ],
+    "geo": {
+        "address": "3644 Ladoga Ave, Long Beach, CA 90808, USA",
+        "latitude": 33.824257,
+        "longitude": -118.103267
+    },
     "location": "3644 LADOGA AVE"
 }

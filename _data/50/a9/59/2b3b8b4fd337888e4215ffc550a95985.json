@@ -2,5 +2,10 @@
     "dates": [
         "11/5/2016 - 11/5/2016"
     ],
+    "geo": {
+        "address": "723 E 6th St, Long Beach, CA 90802, USA",
+        "latitude": 33.77444,
+        "longitude": -118.1831612
+    },
     "location": "723 E 6TH ST"
 }

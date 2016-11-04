@@ -2,5 +2,10 @@
     "dates": [
         "11/3/2016 - 11/5/2016"
     ],
+    "geo": {
+        "address": "1812 Pasadena Ave, Long Beach, CA 90806, USA",
+        "latitude": 33.7901474,
+        "longitude": -118.1867018
+    },
     "location": "1812 PASADENA AVE"
 }

@@ -2,5 +2,10 @@
     "dates": [
         "10/29/2016 - 10/30/2016"
     ],
+    "geo": {
+        "address": "1605 E 2nd St, Long Beach, CA 90802, USA",
+        "latitude": 33.7675389,
+        "longitude": -118.1722363
+    },
     "location": "1605 E 2ND ST"
 }

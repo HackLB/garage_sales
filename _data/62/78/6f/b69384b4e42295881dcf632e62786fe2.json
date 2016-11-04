@@ -2,5 +2,10 @@
     "dates": [
         "11/5/2016 - 11/5/2016"
     ],
+    "geo": {
+        "address": "1775 Ohio Ave, Long Beach, CA 90804, USA",
+        "latitude": 33.789512,
+        "longitude": -118.160566
+    },
     "location": "1775 OHIO AVE"
 }

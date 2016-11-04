@@ -2,5 +2,10 @@
     "dates": [
         "11/5/2016 - 11/5/2016"
     ],
+    "geo": {
+        "address": "3725 Radnor Ave, Long Beach, CA 90808, USA",
+        "latitude": 33.8258036,
+        "longitude": -118.1184015
+    },
     "location": "3725 RADNOR AVE"
 }
