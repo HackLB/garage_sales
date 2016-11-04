@@ -39,7 +39,7 @@ def geocode_old_record(path):
         address = '{}, Long Beach, CA'.format(data['location'])
 
         geocoded_location = geocode(address)
-        data['geo'] = geocoded_location
+        data['coordinates'] = geocoded_location
         pprint(data)
         with open(path, 'w') as f:
             json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
