@@ -5,10 +5,16 @@ from bs4 import BeautifulSoup
 from pprint import pprint
 import simplejson as json
 import hashlib
-from geopy.geocoders import Nominatim
+
+from geopy.geocoders import Nominatim, GoogleV3
 from geopy.exc import GeocoderTimedOut
 
-geolocator = Nominatim()
+
+with open('../secrets.json') as f:    
+    secrets = json.load(f)
+
+geolocator = GoogleV3(api_key=secrets['google_api_key'])
+
 url = 'https://wwwbitprod1.longbeach.gov/GarageSalePermit/SearchByDate.aspx'
 
 def getmd5(message):    
